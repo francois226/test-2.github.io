@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Immobilière - Trouvez votre bien idéal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .properties {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .property {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-info {
+            padding: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .contact-form button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agence Immobilière Horizon</h1>
+        <p>Trouvez la maison ou l’appartement de vos rêves</p>
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#biens">Nos Biens</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Votre projet immobilier commence ici</h2>
+            <p>Découvrez nos offres exclusives et trouvez le bien qui vous correspond.</p>
+        </div>
+    </section>
+    <section id="biens" class="container">
+        <h2 class="section-title">Nos Biens en Vente</h2>
+        <div class="properties">
+            <div class="property">
+                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Maison moderne">
+                <div class="property-info">
+                    <h3>Maison Moderne</h3>
+                    <p>4 pièces - 120m² - 350 000 €</p>
+                    <p>Quartier calme, proche écoles et commerces.</p>
+                </div>
+            </div>
+            <div class="property">
+                <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Appartement lumineux">
+                <div class="property-info">
+                    <h3>Appartement Lumineux</h3>
+                    <p>3 pièces - 85m² - 250 000 €</p>
+                    <p>Centre-ville, vue dégagée, balcon.</p>
+                </div>
+            </div>
+            <div class="property">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Studio cosy">
+                <div class="property-info">
+                    <h3>Studio Cosy</h3>
+                    <p>1 pièce - 30m² - 120 000 €</p>
+                    <p>Idéal investisseur ou premier achat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="container">
+        <h2 class="section-title">Nos Services</h2>
+        <p>Nous vous accompagnons dans tous vos projets immobiliers : achat, vente, location, gestion locative, estimation gratuite, etc.</p>
+    </section>
+    <section id="contact" class="container">
+        <h2 class="section-title">Contactez-nous</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Téléphone">
+            <textarea placeholder="Votre message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Agence Immobilière Horizon. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
